@@ -1,7 +1,8 @@
 # docker-rpi-asterisk
 
 
-´´´
+## docker-compose.yml - for running
+```
 asterisk:
   container_name: asterisk-arm
   image: phreakazoid/asterisk-rpi:latest
@@ -14,4 +15,4 @@ asterisk:
     - "/opt/asterisk-arm/log:/var/log/asterisk"
   environment:
     TZ: "Europe/Berlin"
-´´´
+```
