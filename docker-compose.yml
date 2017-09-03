@@ -1,0 +1,16 @@
+asterisk:
+  container_name: asterisk-arm
+  build: ./
+  restart: always
+  net: host
+#  ports:
+#    - 5060:5060
+#    - 4569:4569
+#    - 5036:5036
+  volumes:
+    - "/etc/localtime:/etc/localtime:ro"
+    - "/opt/asterisk-arm/etc:/etc/asterisk"
+    - "/opt/asterisk-arm/lib:/var/lib/asterisk"
+    - "/opt/asterisk-arm/log:/var/log/asterisk"
+  environment:
+    TZ: "Europe/Berlin"
