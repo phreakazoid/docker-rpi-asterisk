@@ -1,4 +1,4 @@
-# docker-rpi-asterisk
+# asterisk-rpi
 
 
 ## docker-compose.yml - for running
