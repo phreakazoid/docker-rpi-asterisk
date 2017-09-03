@@ -15,7 +15,8 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 RUN [ "cross-build-end" ]
 
-CMD /entrypoint.sh
-
 VOLUME ["/etc/asterisk", "/var/lib/asterisk", "/var/log/asterisk"]
 EXPOSE 5060
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["/usr/sbin/asterisk", "-g", "-f"]
