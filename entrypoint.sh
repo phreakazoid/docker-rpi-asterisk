@@ -9,4 +9,4 @@ if ! [ "$(ls -A /var/lib/asterisk)" ]; then
 fi
 
 # START ASTERISK
-/usr/sbin/asterisk -g -f
+#/usr/sbin/asterisk -g -f
