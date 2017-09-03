@@ -19,4 +19,4 @@ VOLUME ["/etc/asterisk", "/var/lib/asterisk", "/var/log/asterisk"]
 EXPOSE 5060
 
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["/usr/sbin/asterisk", "-g", "-f"]
+CMD ["/usr/sbin/asterisk", "-vvvdddf", "-T", "-W", "-U", "root", "-p"]
